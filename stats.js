@@ -1,13 +1,6 @@
 (() => {
   if (!window.stats) {
     !((e, a, s, r, n, g) => {
-      e.head.append(
-        (a = Object.assign(e.createElement("script"), {
-          src: "https://easrng-stats.glitch.me/stats.js",
-          async: !0
-        }))
-      );
-      a.onerror = o => g.map(z => z.e(o), (g.push = x => r.reject(o)));
       s[n] = new Proxy(
         {},
         {
