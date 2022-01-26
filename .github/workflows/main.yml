@@ -32,7 +32,7 @@ jobs:
       - name: Install 
         run: |
           cd "$GITHUB_WORKSPACE"
-          npx terser --compress --mangle -- stats.src.js -o stats.js
+          npx terser --compress --mangle -o stats.js -- stats.src.js
       
       - name: Verified commit
         # You may pin to the exact commit or the version.
