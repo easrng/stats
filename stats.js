@@ -69,10 +69,13 @@
     beacon: async event => {
       if (!beaconURL) throw new Error("No beacon set");
       if (beaconURL && (overrideDNT || navigator.doNotTrack) != "1")
-        navigator.sendBeacon(
+        fetch(
           beaconURL,
-          JSON.stringify({ event, site: site || "" })
-        );
+          {
+            method: "post",
+            body: JSON.stringify({ event, site: site || "" })
+          }
+        ).then(()=>{}).catch(console.warn.bind(console));
     }
   };
   if (overrideDNT == null && navigator.doNotTrack == "1") {
