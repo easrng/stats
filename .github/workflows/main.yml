@@ -33,12 +33,11 @@ jobs:
         run: |
           cd "$GITHUB_WORKSPACE"
           npx terser --compress --mangle -o stats.js -- stats.src.js
-          git add stats.js
       
       - name: Commit
         uses: zwaldowski/git-commit-action@v1
         with:
-          commit-message: Minify JS
+          commit_message: Minify JS
     
     
     
