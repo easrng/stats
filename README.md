@@ -17,7 +17,7 @@ Put the folowing code in your `<head>` tag.
  - `site`
    Site ID
  - `loadEvent`
-   If `1`, send a `page-load` event on page load. Otherwise, don't send any events at all
+   If `1`, automatically send a `page-load` beacon on page load.
 ### Sending Beacons
 Use the following JavaScript to send a beacon:
 ```js
