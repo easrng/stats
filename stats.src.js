@@ -73,7 +73,8 @@
           beaconURL,
           {
             method: "post",
-            body: JSON.stringify({ event, site: site || "" })
+            body: JSON.stringify({ event, site: site || "" }),
+            mode: "no-cors"
           }
         ).then(()=>{}).catch(console.warn.bind(console));
     }
