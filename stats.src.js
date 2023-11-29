@@ -94,7 +94,7 @@
     };
     iframe.setAttribute(
       "style",
-      "all:initial!important;position:fixed!important;bottom:0!important;left:0!important;margin:1rem!important;max-width:25rem!important;border:none!important;width:calc(100% - 2rem)!important;overflow:hidden!important;height:11rem!important;"
+      "all:initial!important;position:fixed!important;bottom:0!important;left:0!important;margin:1rem!important;max-width:25rem!important;border:none!important;width:calc(100% - 2rem)!important;overflow:hidden!important;height:20rem!important;"
     );
     iframe.srcdoc = `<style>
 body,html{margin:0;padding:0;width:100%;height:100%;overflow: hidden;}
